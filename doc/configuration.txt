@@ -1,0 +1,7 @@
+Configuration for NessusRestTest.py
+
+Hardware: MacBook Pro
+OS: OS-X Yosemite Version 10.10.5
+Tenable Nessus Version 6.3.7
+Python Version 2.7.10
+Django version 1.8.3
