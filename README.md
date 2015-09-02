@@ -1,2 +1,2 @@
 # openRMS
-Open source Risk Management System code.
+Open Risk Management System
