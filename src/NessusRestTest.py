@@ -38,6 +38,7 @@ print (data) # it works!  can also print (resp.content)
 params = data
 print (params)
 
+print ("Calling Nessus API to list families")
 url = 'https://localhost:8834/plugins/families'
 resp = requests.get(url=url, params=params, verify=False) # Certificate verify failed!
 print ("response.text:")
