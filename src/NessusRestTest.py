@@ -31,14 +31,14 @@ params = dict(
     password='password'
 )
 print (params)
-print ("Opening Nessus session")
+print ("\nOpening Nessus session")
 resp = requests.post(url=url, params=params, verify=False) # Certificate verify failed!
 data = json.loads(resp.text)
 print (data) # it works!  can also print (resp.content)
 params = data
 print (params)
 
-print ("Calling Nessus API to list families")
+print ("\nCalling Nessus API to list families")
 url = 'https://localhost:8834/plugins/families'
 resp = requests.get(url=url, params=params, verify=False) # Certificate verify failed!
 print ("response.text:")
@@ -46,7 +46,7 @@ print (resp.text)
 data = json.loads(resp.text)
 print (data)
 
-print ("Closing Nessus session")
+print ("\nClosing Nessus session")
 resp = requests.delete(url=url, params=params, verify=False) # Certificate verify failed!
 data = json.loads(resp.text)
 print (data)
